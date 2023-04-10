@@ -1,0 +1,25 @@
+# common setting
+ginblog:
+  mode: debug
+  addr: :8080
+
+
+# Mysql setting
+mysql:
+  host: 192.168.1.13
+  port: 3306
+  user: root
+  password: CSljr689425.?!
+  database: ginblog
+  max-idle-connections: 100
+  max-open-connections: 100
+  max-connection-life-time: 10s
+  log-level: 4  # GORM log level, 1: silent, 2:error, 3:warn, 4:info
+
+# log setting
+log:
+  disable-caller: false
+  disable-stacktrace: false
+  level: debug
+  format: console
+  output-paths: [ /Volumes/MacData/goProgram/myProject/gin_blog/logs/ginblog.log, stdout ]
